@@ -42,7 +42,7 @@ void init() {
     }
 
     // set rwlocks, to protect data
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < sqrt_n; i++) {
         pthread_rwlock_init(&rwlocks[i], NULL);
         // all locks lock at begin
         pthread_rwlock_wrlock(&rwlocks[i]);
@@ -50,7 +50,7 @@ void init() {
 }
 
 void release() {
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < sqrt_n; i++) {
         pthread_rwlock_destroy(&rwlocks[i]);
     }
 
@@ -176,14 +176,14 @@ int main(int argc, char **argv)
 
     // write to file
     char filename[20];
-    sprintf(filename, "output/aanswer%d_%d.txt", n, k);
+    sprintf(filename, "output/answer%d_%d.txt", n, k);
     FILE *fp = fopen(filename, "w");
     for (int i = 2; i <= n; i++) {
         fprintf(fp, "%d: %d\n", i, isprime[i]);
     }
     fclose(fp);
 
-    // timer twice
+    // timer three times
     diftime = getDiffTime();
     printf("Print time: %ld us\n", diftime);
 
