@@ -1,0 +1,23 @@
+Main time: 17 us
+Process 1 time: 30 us
+Process 2 time: 15 us
+Process 3 time: 2 us
+Process 4 time: 2 us
+Process 5 time: 1 us
+Process 6 time: 1 us
+Process 7 time: 2 us
+Process 8 time: 2 us
+Process 9 time: 1 us
+Process 10 time: 1 us
+Process 11 time: 1 us
+Process 12 time: 1 us
+Process 13 time: 1 us
+Process 14 time: 1 us
+Process 15 time: 1 us
+Process 16 time: 13 us
+Process 17 time: 1 us
+Process 18 time: 1 us
+Process 19 time: 1 us
+Process 20 time: 1 us
+Process 21 time: 2 us
+Process 22 time: 1 us
